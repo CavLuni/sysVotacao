@@ -6,5 +6,5 @@ import org.springframework.stereotype.Repository;
 import sys.domain.Enquete;
 
 @Repository
-public interface EnqueteRepository extends JpaRepository<Enquete, String> {
+public interface EnqueteRepository extends JpaRepository<Enquete, Integer> {
 }

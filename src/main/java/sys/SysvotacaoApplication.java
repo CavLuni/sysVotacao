@@ -30,13 +30,12 @@ public class SysvotacaoApplication implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 		
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm");
-		
-		Enquete e1 = new Enquete(null, sdf.parse("30/09/2019 10:32"), sdf.parse("30/09/2020 10:32"), "Em quem vc votaria para presidente em 2022?");
-		Enquete e2 = new Enquete(null, sdf.parse("01/07/2020 10:32"), sdf.parse("30/10/2020 10:32"), "Como voce avalia o meu trabalho?");
-		Enquete e3 = new Enquete(null, sdf.parse("01/09/2017 10:32"), sdf.parse("23/12/2017 10:32"), "Qual o navegador voce costuma usar?");
-		Enquete e4 = new Enquete(null, sdf.parse("01/01/2020 10:32"), sdf.parse("01/01/2021 10:32"), "Qual a linguagem mais usada atualmente, em programação?");
-		
-		
+				
+		Enquete e1 = new Enquete(null, sdf.parse("30/09/2019 10:32"), sdf.parse("30/09/2020 10:32"), "Em quem vc votaria para presidente em 2022?", "Em_andamento");
+		Enquete e2 = new Enquete(null, sdf.parse("01/07/2020 10:32"), sdf.parse("30/10/2020 10:32"), "Como voce avalia o meu trabalho?", "Não_iniciada");
+		Enquete e3 = new Enquete(null, sdf.parse("01/09/2017 10:32"), sdf.parse("23/12/2017 10:32"), "Qual o navegador voce costuma usar?", "Finalizada");
+		Enquete e4 = new Enquete(null, sdf.parse("01/01/2020 10:32"), sdf.parse("01/01/2021 10:32"), "Qual a linguagem mais usada atualmente, em programação?", "Em_andamento");
+								
 		OpcoesVotos op1 = new OpcoesVotos(null, "Bolssonaro", e1);
 		OpcoesVotos op2 = new OpcoesVotos(null, "Boulos", e1);
 		OpcoesVotos op3 = new OpcoesVotos(null, "Marina", e1);
